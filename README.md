@@ -7,3 +7,5 @@ Machine code, consisting of machine language instructions, is used to directly c
 An assembly language(asm) is a low level programming language for a computer but still requires compilation. It describes the succession of commands the processor will execute. One line means one instruction.
 Assembly has the advantage to be more readable by humans.
 
+
+
