@@ -8,3 +8,12 @@ An assembly language(asm) is a low level programming language for a computer but
 Assembly has the advantage to be more readable by humans.
 
 ### The tools
+
+These are some assemblers that translate assembly language source code into binary programs:
+- MASM (Micorosft Assembler).
+- NASM (Netwide Assembler).
+- FASM (Flat Assembler).
+
+In this project, we must compile our assembly code with *nasm*.
+
+#### A typical NASM file layout
