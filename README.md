@@ -1,4 +1,4 @@
-## Machine code vs assembly
+## Machine code vs Assembly
 
 In computer programming, each computer has a microprocessor that manages the computer's arithmetical, logical, and control activities. And every processor family has its own instruction set for handling various operations such as displaying information on screen and performing various other operations.
 
