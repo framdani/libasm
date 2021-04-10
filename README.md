@@ -14,6 +14,14 @@ These are some assemblers that translate assembly language source code into bina
 - NASM (Netwide Assembler).
 - FASM (Flat Assembler).
 
-In this project, we must compile our assembly code with *nasm*.
+In this project, we gonna write our assembly code inside .s files and compile them with the nasm compiler.
+```
+# Install nasm on MacOS 
+brew install nasm
+
+#Compile assemly files
+nasm -f macho64 asm_files.s -o object_files.o
+ar rcs exec_name object_files
+```
 
 #### A typical NASM file layout
