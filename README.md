@@ -32,6 +32,8 @@ ar rcs exec_name object_files
    - section .data   : is used for declaring initialized data or constants. This dara does not change at runtime.
    - section .text   : where program code goes.
    - section .bss    : the bss section is used for declaring variables
-   #### Registres
+   
+## Registrs
+
 #### Instructions
 #### The calling conventions
