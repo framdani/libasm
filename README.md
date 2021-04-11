@@ -7,7 +7,7 @@ Machine code, consisting of machine language instructions, is used to directly c
 An assembly language(asm) is a low level programming language for a computer but still requires compilation. It describes the succession of commands the processor will execute. One line means one instruction.
 Assembly has the advantage to be more readable by humans.
 
-### The tools
+## The tools
 
 These are some assemblers that translate assembly language source code into binary programs:
 - MASM (Micorosft Assembler).
@@ -24,11 +24,14 @@ nasm -f macho64 asm_files.s -o object_files.o
 ar rcs exec_name object_files
 ```
 
-#### A typical NASM file layout
+## A typical NASM file layout
 
-Generally, we put the code in a section called .text and the constant data in a section called .data.
    ![alt text](https://mdimg.wxwenku.com/getimg/356ed03bdc643f9448b3f6485edc229ba422382be5dc35225d189c9043ca660f40f6f899b01c9555ae15ee9292ca4f48.jpg)
- 
+   
+   Most programs consist of directives followed by one or more sections. In general, an assembly can be divided into three sections.
+   - section .data
+   - section .text
+   - section .bss
    #### Registres
 #### Instructions
 #### The calling conventions
