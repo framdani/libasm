@@ -39,7 +39,7 @@ There are 3 types of memory : regiters, memory addresses(RAM) and constants.
 Registers are very fast , they store data elements for processing without having to access the memory. A limited number of registers are built into the processor chip.
 
 <p align="center">
-![alt text](https://blog.oursin.eu/images/asm_registers.png)
+<img src = "https://blog.oursin.eu/images/asm_registers.png"/>
 </p>
 #### Instructions
 #### The calling conventions
