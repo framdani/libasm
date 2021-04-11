@@ -52,4 +52,18 @@ A basic instruction in assembly language has two parts, the first one is the nam
 ```
 
 There are hundreds of instructions. Here is some examples:
+
+
+```
+mov x ,  y	x ← y
+and x , y	x ← x and y
+or x , y	x ← x or y
+xor x , y	x ← x xor y
+add x , y	x ← x + y
+sub x , y	x ← x – y
+inc x	x ← x + 1
+dec x	x ← x – 1
+syscall	Invoke an operating system routine
+
+```
 ## The calling conventions
