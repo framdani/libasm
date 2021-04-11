@@ -64,7 +64,7 @@ sub x ,y	x ← x – y
 inc x	      x ← x + 1
 dec x	      x ← x – 1
 syscall	   Invoke an operating system routine
-db	       A pseudo-instruction that declares bytes that will be in memory when the program runs
+db	         A pseudo-instruction that declares bytes that will be in memory when the program runs
 
 ```
 ## The calling conventions
