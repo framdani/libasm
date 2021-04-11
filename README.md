@@ -25,7 +25,7 @@ ar rcs exec_name object_files
 ```
 
 #### A typical NASM file layout
-   ![alt text](https://drive.google.com/file/d/13DfQ7oNmAi4C1wF7a8KM_O2nnUjFwnbf/view?usp=sharing)
+   ![alt text](https://mdimg.wxwenku.com/getimg/356ed03bdc643f9448b3f6485edc229ba422382be5dc35225d189c9043ca660f40f6f899b01c9555ae15ee9292ca4f48.jpg)
    #### Registres
 #### Instructions
 #### The calling conventions
