@@ -69,5 +69,7 @@ AND MASK1, 128   ; Perform AND operation on the
 ADD MARKS, 10    ; Add 10 to the variable MARKS
 MOV AL, 10       ; Transfer the value 10 to the AL register
 
+ret		 ; End the function
+
 ```
 ## The calling conventions
