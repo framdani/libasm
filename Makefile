@@ -1,15 +1,15 @@
-NAME 	= libasm.a
-CC 		= gcc
+NAME 	= test
+CC 		= clang
 FLAGS 	= -Wall -Wextra -Werror
 
 SRC 	= ft_strlen.s
 
-OBJ 	= $(SRC:.c=.o)
+OBJ 	= $(SRC:.s=.o)
 
 all : $(NAME)
-	$(CC) $(FLAGS) -c $(SRC)
+$(NAME):$(SRC)
+	nasm -f macho64 ft_strlen.s -o ft_strlen.o
 	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
 
 clean:
 	@rm -rf *.o
