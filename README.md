@@ -55,53 +55,19 @@ There are hundreds of instructions. Here is some examples:
 
 
 ```
-mov x ,y	     x ← y
+INC COUNT        ; Increment the memory variable COUNT
 
-```
+MOV TOTAL, 48    ; Transfer the value 48 in the 
+                 ; memory variable TOTAL
+					  
+ADD AH, BH       ; Add the content of the 
+                 ; BH register into the AH register
+					  
+AND MASK1, 128   ; Perform AND operation on the 
+                 ; variable MASK1 and 128
+					  
+ADD MARKS, 10    ; Add 10 to the variable MARKS
+MOV AL, 10       ; Transfer the value 10 to the AL register
 
-```
-and x ,y	     x ← x and y
-
-```
-
-```
-or x ,y	     x ← x or y
-
-```
-
-```
-xor x ,y	     x ← x xor y
-
-```
-
-```
-add x ,y	     x ← x + y
-
-```
-
-```
-sub x ,y	     x ← x – y
-
-```
-
-```
-inc x	        x ← x + 1
-
-```
-
-```
-dec x	        x ← x – 1
-
-```
-
-```
-syscall	     Invoke an operating system routine
-
-```
-
-```
-db	         A pseudo-instruction that declares bytes that will be in memory when the program runs
-
-```
 ```
 ## The calling conventions
