@@ -33,7 +33,7 @@ ar rcs exec_name object_files
    - section .text   : where program code goes.
    - section .bss    : the bss section is used for declaring variables
    
-## Registrs
+## Registers
 
 #### Instructions
 #### The calling conventions
