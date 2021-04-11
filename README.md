@@ -58,13 +58,13 @@ There are hundreds of instructions. Here is some examples:
 mov x ,y	   x ← y
 and x ,y	   x ← x and y
 or x ,y	   x ← x or y
-xor x , y	x ← x xor y
-add x , y	x ← x + y
-sub x , y	x ← x – y
+xor x ,y	x ← x xor y
+add x ,y	x ← x + y
+sub x ,y	x ← x – y
 inc x	      x ← x + 1
 dec x	      x ← x – 1
 syscall	   Invoke an operating system routine
-db	         A pseudo-instruction that declares bytes that will be in memory when the program runs
+db	       A pseudo-instruction that declares bytes that will be in memory when the program runs
 
 ```
 ## The calling conventions
