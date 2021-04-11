@@ -34,6 +34,7 @@ ar rcs exec_name object_files
    - section .bss    : the bss section is used for declaring variables
    
 ## Registers
-
+The registers store data elements for processing without having to access the memory. A limited number of registers are built into the processor chip.
+![alt text](https://blog.oursin.eu/images/asm_registers.png)
 #### Instructions
 #### The calling conventions
