@@ -45,4 +45,11 @@ Registers are very fast , they store data elements for processing without having
 </p>
 
 ## Instructions
+A basic instruction in assembly language has two parts, the first one is the name of the instruction[mnemonic], and the second is the operands.
+
+```
+[label]   mnemonic   [operands]   [;comment]
+```
+
+There are hundreds of instructions. Here is some examples:
 ## The calling conventions
