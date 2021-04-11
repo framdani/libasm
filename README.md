@@ -26,8 +26,9 @@ ar rcs exec_name object_files
 
 ## A typical NASM file layout
 
-![alt text](https://mdimg.wxwenku.com/getimg/356ed03bdc643f9448b3f6485edc229ba422382be5dc35225d189c9043ca660f40f6f899b01c9555ae15ee9292ca4f48.jpg)
-   
+<p>
+<img src ="https://mdimg.wxwenku.com/getimg/356ed03bdc643f9448b3f6485edc229ba422382be5dc35225d189c9043ca660f40f6f899b01c9555ae15ee9292ca4f48.jpg"/>
+</p>
    Most programs consist of directives followed by one or more sections. In general, an assembly can be divided into three sections: 
    - section .data   : is used for declaring initialized data or constants. This dara does not change at runtime.
    - section .text   : where program code goes.
