@@ -80,3 +80,4 @@ Each system call has a fixed number. We need to take the following steps to use 
 - Store the arguments to the system call in the registers RBX, RCX, etc.
 - Call the relevant interrupt.
 - The result is usually returned in the RAX registre.
+## System call error handling
