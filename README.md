@@ -74,9 +74,9 @@ ret		 ; End the function
 ```
 ## System calls
 System calls are the interface between user programs and the kernel. They are used to let the kernel perform various system tasks, such as file access, process management.
+
 Each system call has a fixed number. We need to take the following steps to use a system call in our programs:
 - Put the system call number in the RAX register.
 - Store the arguments to the system call in the registers RBX, RCX, etc.
 - Call the relevant interrupt.
 - The result is usually returned in the RAX registre.
--
