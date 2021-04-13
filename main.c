@@ -23,9 +23,9 @@ int				main()
 	char *s;
 	char *dst = (char *)malloc(15);
 
-	s = "okokokokok";
+	s = "/0okokoko12345678910111213141516171819";
 
-	printf("%s\n", strcpy(dst, s));
-	printf("%s\n", ft_strcpy(dst, s));
+	printf("|%s|\n", strcpy(dst, s));
+	printf("|%s|", ft_strcpy(dst, s));
 	return (0);
 }
