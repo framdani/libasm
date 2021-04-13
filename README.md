@@ -72,12 +72,17 @@ MOV AL, 10       ; Transfer the value 10 to the AL register
 ret		 ; End the function
 
 ```
-## System calls
-System calls are the interface between user programs and the kernel. They are used to let the kernel perform various system tasks, such as file access, process management.
+## System calls & calling conventions
 
-Each system call has a fixed number. We need to take the following steps to use a system call in our programs:
+A **system call** is the fundamental interface between an application and the Linux kernel. When a Unix/Linux program does a file I/O, network data transfer or invokes some process which directly or indirectly interact with the low level instructions, then system call is involved. Making these calls usually involves using a library called glibc which contains the functions.
+
+A systems programmer writes program that will not directly make the systems call, rather than he will just specify which system call to use. This involves using a calling convention which is dependent or the hardware architecture of the system where the kernel sits. Hence different architectures have different calling conventions.
+A **calling convention** is an implementation-level design for how subroutines receive parameters from their caller and how the results are returned. Differences in various implementations include where parameters, return values, return addresses and scope links are placed (registers, stack or memory etc.), and how the tasks of preparing for a function call and restoring the environment afterward are divided between the caller and the callee.
+
+Each **system call** has a fixed number. We need to take the following steps to use a system call in our programs:
 - Put the system call number in the RAX register.
 - Store the arguments to the system call in the registers RBX, RCX, etc.
 - Call the relevant interrupt.
 - The result is usually returned in the RAX registre.
+
 ## System call error handling
