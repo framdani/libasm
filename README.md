@@ -87,3 +87,8 @@ Each **system call** has a fixed number. We need to take the following steps to 
 - The result is usually returned in the RAX registre.
 
 ## System call error handling
+
+System calls that fail to complete successfully almost always return a value of -1 in the program. In addition to the -1 returned to the program, the unsuccessful system call places an integer in an externally declared variable, errno. In a C program, you can determine the value in errno if your program contains the following statement:
+```
+#include <errno.h>
+```
