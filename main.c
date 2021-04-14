@@ -13,24 +13,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-int				ft_isascii(char);
+#include <sys/_types/_errno_t.h>
+#include <unistd.h>
+#include <errno.h>
 size_t			ft_strlen(char *);
 char 			*ft_strcpy(char * dst, const char * src);
 int				ft_strcmp(const char *s1, const char *s2);
+int				ft_write(int fd, char *str, int length);
+int				ft_read(int fd, void *buf, size_t nbyte);
+int				ft_test(char *str);
 int				main()
 {
 	char *s;
 	char *dst = (char *)malloc(15);
 
 	s = "/0okokoko12345678910111213141516171819";
+	
+	printf("%d", ft_test("o"));
 
-	//printf("|%s|\n", strcpy(dst, s));
-	//printf("|%s|", ft_strcpy(dst, s));
-	//0 if equal
-	//s1>s2 =>1 == s1 rdi
-	//s1<s2 =>-1
-	printf("%d\n", ft_strcmp("abcd", ""));
-	printf("%d", strcmp("abcd", ""));
-	return (0);
 }
