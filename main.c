@@ -17,18 +17,20 @@
 #include <unistd.h>
 #include <errno.h>
 size_t			ft_strlen(char *);
-char 			*ft_strcpy(char * dst, const char * src);
+char 			*ft_strcpy(char * dst, const char  *src);
+
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_write(int fd, char *str, int length);
 int				ft_read(int fd, void *buf, size_t nbyte);
-int				ft_test(char *str);
+char			*ft_strdup(const char *s1);
 int				main()
 {
 	char *s;
 	char *dst = (char *)malloc(15);
 
-	s = "/0okokoko12345678910111213141516171819";
-	
-	printf("%d", ft_test("o"));
+	//s = "okokoko12345678910111213141516171819";
+	s=NULL;
+	printf("%s\n", ft_strdup(s));
+	printf("%s", strdup(s));
 
 }

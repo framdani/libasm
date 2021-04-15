@@ -7,6 +7,7 @@ SRC 	= ft_strlen.s\
 		  ft_strcmp.s\
 		  ft_write.s\
 		  ft_read.s\
+		  ft_strdup.s
 
 OBJ 	= $(SRC:.s=.o)
 
@@ -17,6 +18,7 @@ $(NAME):$(SRC)
 	@nasm -f macho64 ft_strcmp.s -o ft_strcmp.o
 	@nasm -f macho64 ft_write.s -o ft_write.o
 	@nasm -f macho64 ft_read.s -o ft_read.o
+	@nasm -f macho64 ft_strdup.s -o ft_strdup.o
 	@ar rc $(NAME) $(OBJ)
 	@echo "libasm.a is ready"
 
