@@ -4,14 +4,14 @@ extern _malloc
 extern _ft_strcpy
 
 _ft_strdup:
-	push rdi
-	call _ft_strlen
-	inc rax
-	mov rdi, rax
+	push rdi				;conserve the 1st argument
+	call _ft_strlen			;len of rdi in rax
+	inc rax					;add 1 for \0
+	mov rdi, rax			;len became the argument of malloc
 	call _malloc
-	pop rsi
-	mov rdi, rax
-	call _ft_strcpy
+	pop rsi					;rdi in rsi now
+	mov rdi, rax			;the result of malloc is the dest in strcpy
+	call _ft_strcpy			; the result in rax
 	ret
 
 	

@@ -1,5 +1,7 @@
 NAME 	= libasm.a
+
 CC 		= clang
+
 FLAGS 	= -Wall -Wextra -Werror
 
 SRC 	= ft_strlen.s\
@@ -12,6 +14,7 @@ SRC 	= ft_strlen.s\
 OBJ 	= $(SRC:.s=.o)
 
 all : $(NAME)
+
 $(NAME):$(SRC)
 	@nasm -f macho64 ft_strlen.s -o ft_strlen.o
 	@nasm -f macho64 ft_strcpy.s -o ft_strcpy.o
@@ -22,14 +25,20 @@ $(NAME):$(SRC)
 	@ar rc $(NAME) $(OBJ)
 	@echo "libasm.a is ready"
 
-execute:
-	@$(CC) main.c $(NAME)
+test_a:
+	@$(CC) $(FLAGS) test_a.c $(NAME)
+	@./a.out
+test_b:
+	@$(CC) $(FLAGS) test_b.c $(NAME)
 	@./a.out
 clean:
 	@rm -rf *.o
 	@echo "Object files deleted successfully"
+
 fclean:clean
 	@rm -rf $(NAME)
+	@rm -rf ./a.out
+
 re: fclean all
 
 .PHONY : make re all clean fclean

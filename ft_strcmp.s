@@ -5,20 +5,21 @@ _ft_strcmp:
 	xor al, al
 	xor rax, rax
 repeat:
-	mov al, [rsi]
-	mov bl, [rdi]
+	mov al, [rsi]		;2nd argument
+	mov bl, [rdi]		;1st argument
 	cmp al, bl
-	ja inf
-	jb sup
+	ja inf              ;jmp above x>y
+	jb sup				;jmp below x<y
 	cmp bl, 0
 	je end
-	inc rsi
 	inc rdi
+	inc rsi
+	inc rcx
 	jmp repeat
 sup:
-	mov eax, 1
+	mov rax, 1
 	jmp end
 inf:
-	mov eax, -1
+	mov rax, -1
 end:
 	ret

@@ -10,7 +10,7 @@ repeat:
 	inc rcx
 	jmp repeat
 end:
-	sub rdi, rcx ;so that rdi points at the beg
-	mov rax, rdi
+	sub rdi, rcx ;so that rdi points at the start of rdi
+	mov rax, rdi ;the result
 	ret
 	
