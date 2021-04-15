@@ -6,5 +6,5 @@ _ft_strlen:
 	repne scasb				;scan as long as not equal to rax
 	neg rcx					;make it positif
 	sub rcx, 2				;-1 for 0 and -1 for the complement of two
-	lea rax, [rcx]			
+	mov rax, rcx			
 	ret
