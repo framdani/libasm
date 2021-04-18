@@ -1,6 +1,0 @@
-write : hello
-ft_write : hello
-
-write : hello
-ft_write : hello
-

@@ -14,7 +14,6 @@ repeat:
 	je end
 	inc rdi
 	inc rsi
-	inc rcx
 	jmp repeat
 sup:
 	mov rax, 1

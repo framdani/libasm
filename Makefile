@@ -37,6 +37,8 @@ clean:
 
 fclean:clean
 	@rm -rf $(NAME)
+	@chmod 777 file.txt
+	@rm -f file.txt
 	@rm -rf ./a.out
 
 re: fclean all
