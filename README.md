@@ -1,6 +1,7 @@
 ## Introduction
 
-The aim of this project is to get familiar with assembly language. We must rewrite the following functions in asm :
+The aim of this project is to get familiar with assembly language. 
+I rewrite the following functions in asm :
 
 ```
 size_t		ft_strlen(char *str);
