@@ -1,4 +1,33 @@
-## Machine code vs Assembly
+## Introduction
+
+The aim of this project is to get familiar with assembly language. We must rewrite the following functions in asm :
+
+```
+size_t		ft_strlen(char *str);
+char		*ft_strcpy(char * dst, const char * src);
+ssize_t		ft_write(int fildes, const void *buf, size_t nbyte);
+ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
+int		ft_strcmp(const char *str1, const char *str2);
+char		*ft_strdup(const char *s1);
+```
+## Requirements
+
+```
+# Install nasm on MacOS 
+brew install nasm
+```
+
+To run this program, use the followings commands :
+```
+make
+make test_a
+make test_b
+```
+But if you cretae your
+
+## Notes
+
+### Machine code vs Assembly
 
 In computer programming, each computer has a microprocessor that manages the computer's arithmetical, logical, and control activities. And every processor family has its own instruction set for handling various operations such as displaying information on screen and performing various other operations.
 
@@ -7,24 +36,22 @@ Machine code, consisting of machine language instructions, is used to directly c
 An assembly language(asm) is a low level programming language for a computer but still requires compilation. It describes the succession of commands the processor will execute. One line means one instruction.
 Assembly has the advantage to be more readable by humans.
 
-## The tools
+### The tools
 
 These are some assemblers that translate assembly language source code into binary programs:
 - MASM (Micorosft Assembler).
 - NASM (Netwide Assembler).
 - FASM (Flat Assembler).
 
-In this project, we gonna write our assembly code inside .s files and compile them with the nasm compiler.
-```
-# Install nasm on MacOS 
-brew install nasm
+To compile assembly files, here is the useful commands :
 
-#Compile assemly files
+```
+#Compile assembly files
 nasm -f macho64 asm_files.s -o object_files.o
 ar rcs exec_name object_files
 ```
 
-## A typical NASM file layout
+### A typical NASM file layout
 
 <p align = "center">
 <img src ="https://mdimg.wxwenku.com/getimg/356ed03bdc643f9448b3f6485edc229ba422382be5dc35225d189c9043ca660f40f6f899b01c9555ae15ee9292ca4f48.jpg"/>
@@ -35,7 +62,7 @@ Most programs consist of directives followed by one or more sections. In general
    - section .text   : where program code goes.
    - section .bss    : the bss section is used for declaring variables
    
-## Registers
+### Registers
 There are 3 types of memory : regiters, memory addresses(RAM) and constants.
 
 Registers are very fast , they store data elements for processing without having to access the memory. A limited number of registers are built into the processor chip.
@@ -44,7 +71,7 @@ Registers are very fast , they store data elements for processing without having
 <img src = "https://blog.oursin.eu/images/asm_registers.png"/>
 </p>
 
-## Instructions
+### Instructions
 A basic instruction in assembly language has two parts, the first one is the name of the instruction[mnemonic], and the second is the operands.
 
 ```
@@ -72,7 +99,7 @@ MOV AL, 10       ; Transfer the value 10 to the AL register
 ret		 ; End the function
 
 ```
-## System calls & calling conventions
+### System calls & calling conventions
 
 In general, a **system call** is the fundamental interface between an application and the Linux kernel. When a Unix/Linux program does a file I/O, network data transfer or invokes some process which directly or indirectly interact with the low level instructions, then system call is involved. Making these calls usually involves using a library called glibc which contains the functions.
 
@@ -86,7 +113,7 @@ Each **system call** has a fixed number. We need to take the following steps to 
 - Call the relevant interrupt.
 - The result is usually returned in the RAX registre.
 
-## System call error handling
+### System call error handling
 
 System calls that fail to complete successfully almost always return a value of -1 in the program. In addition to the -1 returned to the program, the unsuccessful system call places an integer in an externally declared variable, errno. In a C program, you can determine the value in errno if your program contains the following statement:
 ```
