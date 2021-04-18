@@ -1,4 +1,4 @@
-## Introduction
+## 1. Introduction
 
 The aim of this project is to get familiar with assembly language. 
 I rewrite the following functions in asm :
@@ -11,7 +11,7 @@ ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
 int		ft_strcmp(const char *str1, const char *str2);
 char		*ft_strdup(const char *s1);
 ```
-## Requirements
+## 2. Requirements
 
 ```
 # Install nasm on MacOS 
@@ -31,7 +31,7 @@ gcc main.c libasm.a
 ./a.out
 ```
 
-## Notes
+## 3. Notes
 
 ### Machine code vs Assembly
 
