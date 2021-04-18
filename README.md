@@ -23,7 +23,12 @@ make
 make test_a
 make test_b
 ```
-But if you cretae your
+But if you create your own main.c, run the program by :
+```
+make
+gcc main.c libasm.a
+./a.out
+```
 
 ## Notes
 
