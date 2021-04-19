@@ -1,7 +1,8 @@
 ## 1. Introduction
 
 The aim of this project is to get familiar with assembly language. 
-I rewrite the following functions in asm :
+
+We were asked to rewrite the following functions in asm :
 
 ```
 size_t		ft_strlen(char *str);
@@ -24,7 +25,7 @@ make
 make test_a
 make test_b
 ```
-But if you create your own main.c, run the program by :
+But if you create your own 'main.c', run the program by :
 ```
 make
 gcc main.c libasm.a
