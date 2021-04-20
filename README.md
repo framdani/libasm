@@ -1,8 +1,8 @@
-## 1. Libasm
+## 1. Introduction
 
 The aim of this project is to get familiar with assembly language. 
 
-We were asked to rewrite the following functions in asm :
+In this project,I rewrite the following functions in asm :
 
 ```
 size_t		ft_strlen(char *str);
