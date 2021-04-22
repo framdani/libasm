@@ -23,6 +23,12 @@ To run this program, use the followings commands :
 # create libasm.a
 make
 ```
+In order to test my program and to facilitate the correction, I made test(a) and test(b).
+```
+make test_a
+# or
+make test_b
+```
 
 If you create your own 'main.c', run the program by :
 ```
