@@ -88,21 +88,38 @@ There are hundreds of instructions. Here is some examples:
 
 
 ```
-INC COUNT        ; Increment the memory variable COUNT
+; Save register
+push	REG
+pop		REG
 
-MOV TOTAL, 48    ; Transfer the value 48 in the 
-                 ; memory variable TOTAL
-					  
-ADD AH, BH       ; Add the content of the 
-                 ; BH register into the AH register
-					  
-AND MASK1, 128   ; Perform AND operation on the 
-                 ; variable MASK1 and 128
-					  
-ADD MARKS, 10    ; Add 10 to the variable MARKS
-MOV AL, 10       ; Transfer the value 10 to the AL register
+; Set register value
+mov		REG, VALUE	; DEST = VALUE
 
-ret		 ; End the function
+; Common operations
+add		DEST, VALUE	; DEST = DEST + VALUE
+sub		-			; DEST = DEST - VALUE
+inc		REG			; REG++
+dec		-			; REG--
+and		DEST, REG	; DEST = DEST & REG
+xor		-			; DEST = DEST ^ REG
+xor		REG, REG	; = mov	REG, 0
+mul		REG			; REG = REG * RAX
+div		REG			; REG = REG / RAX
+
+; Compare
+cmp	REG, VALUE		; Set flags used by jmp variants
+
+; Label
+label:
+		jmp	label	; next jumps depends on compare flags from cmp
+		je	-		; is equal
+		jne	-		; is not equal
+		jl	-		; < VALUE
+		jle	-		; <= VALUE
+		jz	-		; = 0
+		jnz	-		; != 0
+		jg	-		; > VALUE
+		jge	-		; >= VALUE
 
 ```
 ### System calls & calling conventions
