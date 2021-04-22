@@ -93,7 +93,7 @@ push	REG
 pop		REG
 
 ; Set register value
-mov		REG, VALUE	; DEST = VALUE
+mov		REG, VALUE	; REG = VALUE
 
 ; Common operations
 add		DEST, VALUE	; DEST = DEST + VALUE
