@@ -1,8 +1,7 @@
-## 1. Introduction
+## Libasm
+Recoding some functions of the standard C Library, in x64 Intel Assembly.
 
-The aim of this project is to get familiar with assembly language. 
-
-In this project,I rewrite the following functions in asm :
+### Available functions
 
 ```
 size_t		ft_strlen(char *str);
@@ -12,7 +11,7 @@ ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
 int		ft_strcmp(const char *str1, const char *str2);
 char		*ft_strdup(const char *s1);
 ```
-## 2. Requirements
+### Requirements
 
 ```
 # Install nasm on MacOS 
@@ -21,11 +20,11 @@ brew install nasm
 
 To run this program, use the followings commands :
 ```
+# create libasm.a
 make
-make test_a
-make test_b
 ```
-But if you create your own 'main.c', run the program by :
+
+If you create your own 'main.c', run the program by :
 ```
 make
 gcc main.c libasm.a
