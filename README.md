@@ -37,7 +37,7 @@ gcc main.c libasm.a
 ./a.out
 ```
 
-## 3. Notes
+##  Notes
 
 ### Machine code vs Assembly
 
