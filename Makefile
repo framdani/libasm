@@ -25,12 +25,6 @@ $(NAME):$(SRC)
 	@ar rc $(NAME) $(OBJ)
 	@echo "libasm.a is ready"
 
-test_a:
-	@$(CC) $(FLAGS) test_a.c $(NAME)
-	@./a.out
-test_b:
-	@$(CC) $(FLAGS) test_b.c $(NAME)
-	@./a.out
 clean:
 	@rm -rf *.o
 	@echo "Object files deleted successfully"
