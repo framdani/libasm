@@ -11,23 +11,19 @@ ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
 int		ft_strcmp(const char *str1, const char *str2);
 char		*ft_strdup(const char *s1);
 ```
-### Requirements
+### Commands
 
+#### Requirements
 ```
 # Install nasm on MacOS 
 brew install nasm
 ```
 
-To run this program, use the followings commands :
+#### Build
 ```
-# create libasm.a
-make
-```
-In order to test my program and to facilitate the correction, I made test(a) and test(b).
-```
-make test_a
-# or
-make test_b
+make  	
+make clean 	# Clean temporary built files
+make fclean	# Clean all built files
 ```
 
 If you create your own 'main.c', run the program by :
