@@ -11,7 +11,7 @@ ssize_t		ft_read(int fildes, void *buf, size_t nbyte);
 int		ft_strcmp(const char *str1, const char *str2);
 char		*ft_strdup(const char *s1);
 ```
-### Commands
+## Commands
 
 #### Requirements
 ```
